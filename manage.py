@@ -27,7 +27,7 @@ def addrec():
          
          with sql.connect(host="localhost", user="flask", password="ubuntu", database="flask_db") as con:
             cur = con.cursor()
-            cmd = "INSERT INTO employees (empid,empname,empgender,empphone,empbdate) VALUES ('{0}','{1}','{2}','{3}','{4}')".format(nm,addr,city,zip)
+            cmd = "INSERT INTO employees (empid,empname,empgender,empphone,empbdate) VALUES ('{0}','{1}','{2}','{3}','{4}')".format(empid,empname,empgender,empphone,empbdate)
             cur.execute(cmd)
             
             con.commit()
