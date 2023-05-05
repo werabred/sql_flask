@@ -1,0 +1,25 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+<form action="{{ url_for('addrec') }}" method="POST">
+   <h3>employee information</h3>
+   empid<br>
+   <input type="text" name="empid" /></br>
+
+   empname<br>
+   <input type="text" name="empname" /></br>
+
+   empgender<br>
+   <input type="text" name="empgender" /><br>
+
+   empphone<br>
+   <input type="text" name="empphone" /><br>
+   empbdate<br>
+   <input type="text" name="empbdate" /></br>
+
+   <input type="submit" value="submit" /><br>
+</form>
+</body>
+
+</html>
+{% endblock %}
